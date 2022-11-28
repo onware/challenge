@@ -2,6 +2,11 @@
 
 Welcome! We're glad you've taken up our challenge.
 
+## First launch
+
+A postCreateCommand script is running and will take a couple minutes to complete.
+While it is running, it will be displayed in the Terminal view in the panel below.
+
 ## Getting Started
 
 GitHub codespaces is very similar to Visual Studio Code, but is running in your browser.
@@ -11,6 +16,8 @@ If you're not familiar with either Visual Studio Code or codespaces, here's some
 * The Git graph icon in the feature bar on the left is used to commit changes to your repository.
     * **Important**: you must commit and push your changes in order for them to be saved and shareable
 * To run the project, use the Run and Debug feature (Play symbol with bug icon) in the bar on the left.
+  * To open the app, use the "Ports" tab in the panel below. You will have to do this twice - the first
+    request for the backend, and after the front-end is automatically launched, the front-end.
 * The doubled document icon in the bar on the left is the file tree.
 * The search icon in the bar on the left is a full-project text search.
 * To collapse the sidebar, click on any icon twice.
