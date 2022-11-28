@@ -7,12 +7,13 @@ Welcome! We're glad you've taken up our challenge.
 GitHub codespaces is very similar to Visual Studio Code, but is running in your browser.
 
 If you're not familiar with either Visual Studio Code or codespaces, here's some quick tips:
+* To shut down the codespace, use the green button in the bottom toolbar
 * The Git graph icon in the feature bar on the left is used to commit changes to your repository.
     * **Important**: you must commit and push your changes in order for them to be saved and shareable
 * To run the project, use the Run and Debug feature (Play symbol with bug icon) in the bar on the left.
 * The doubled document icon in the bar on the left is the file tree.
 * The search icon in the bar on the left is a full-project text search.
-* To collapse the section, click on any icon twice.
+* To collapse the sidebar, click on any icon twice.
 
 ## The Challenges
 
