@@ -24,7 +24,9 @@ with great developers, we've added this challenge to our interviewing process.
 ## Ready?
 
 To begin your challenge:
+* Log into GitHub if you haven't yet done so
 * Click on [this link](https://github.com/onware/challenge/generate)
   to create your copy of the repository
-    *  Don't forget to make it public!
+    * Don't forget to make it public!
+    * If you get a 404 error, you didn't sign in.
 * Once you've created the copy, follow the instructions in the Readme that is displayed.
