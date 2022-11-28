@@ -45,7 +45,7 @@ then
         if [[ $f == $sqlpath/*".sql" ]]
         then
             echo "Executing $f"
-            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SApassword -d ApplicationDB -i $f
+            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SApassword -d master -i $f
         fi
     done
 fi
