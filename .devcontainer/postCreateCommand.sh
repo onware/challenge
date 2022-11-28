@@ -12,5 +12,11 @@ dotnet restore
 cd -
 
 cd health-path/ClientApp
-npm install
+set +o errexit
+npmReturnCode=1
+while [[ $npmReturnCode != 0 ]]; do
+    npm install
+    npmReturnCode=$?
+done
+set -o errexit
 cd -
