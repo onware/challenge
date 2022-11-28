@@ -108,16 +108,21 @@ public class CatalogController : ControllerBase
     private async Task FetchMany<T>(IEnumerable<string> inputUrls, Func<T?, JsonArray?> finder, Action<JsonObject> processor) {
         using (var limiter = new Limiter(10))
         {
-            await Task.WhenAll(inputUrls.Select(inputUrl => limiter.Wrap(async () => {
-                var response = await _httpClient.GetFromJsonAsync<T>(inputUrl);
-                if (response != null) {
-                    foreach (var record in finder(response) ?? new JsonArray())
-                    {
-                        if (record != null)
+            await Task.WhenAll(inputUrls.Select(inputUrl => limiter.Wrap(async () =>
+            {
+                try {
+                    var response = await _httpClient.GetFromJsonAsync<T>(inputUrl);
+                    if (response != null) {
+                        foreach (var record in finder(response) ?? new JsonArray())
                         {
-                            processor(record.AsObject());
+                            if (record != null)
+                            {
+                                processor(record.AsObject());
+                            }
                         }
                     }
+                } catch (TaskCanceledException) {
+                    return;
                 }
             })));
         }
