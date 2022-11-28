@@ -1,0 +1,19 @@
+<p>Our weekly newsletter delivers interesting info and useful tips straight to your inbox</p>
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Sign up for our newsletter!</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [formControl]="email" placeholder="you@example.com">
+                <mat-icon matSuffix>mail</mat-icon>
+                <mat-error *ngIf="email.errors !== null">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </p>
+        <p>
+            <button mat-flat-button [disabled]="email.invalid" color="primary" (click)="subscribe()">Subscribe</button>
+        </p>
+    </mat-card-content>
+</mat-card>

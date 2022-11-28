@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "dotnet build ${workspaceFolder}/health-path",
+            "problemMatcher": []
+        },
+        {
+            "label": "kill-ng",
+            "type": "shell",
+            "command": "killall -r '^ng serve' || true"
+        }
+    ]
+}

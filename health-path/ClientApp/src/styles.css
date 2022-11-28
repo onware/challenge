@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+html, body, .all-content {
+  height: 100%;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-content {
+  padding: 1em;
+}
