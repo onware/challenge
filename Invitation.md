@@ -16,7 +16,7 @@ with great developers, we've added this challenge to our interviewing process.
     * GitHub provides all users with 60 hours of free codespaces usage a month,
       which is *way* more than needed for our challenge. If you've used up your
       codespaces for the month on your existing account, just create a new account.
-3. As you work on the challenge, saving your work to a public repository under
+3. As you work on the challenge, save your work to a public repository under
    your account.
 4. You will share the link to your repository with us.
 5. We will meet to talk about your challenge solutions, and also your prior experience.
